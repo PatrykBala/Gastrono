@@ -45,3 +45,63 @@
     color: green;
     text-transform: uppercase;
 }
+.content
+{
+    width: 100%;
+    top: 30%;
+    position: absolute;
+    text-align: center;
+    color: green;
+}
+.content h1
+{
+    font-size: 100px;
+    margin-top: 100px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+button
+{
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    color: green;
+    padding: 15px 0;
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 1px solid greenyellow;
+    position: relative;
+    overflow: hidden;
+}
+span
+{
+    background: whitesmoke;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span
+{
+    width: 100%;
+}
+button:hover
+{
+    border: 2px solid green;
+}
+.top_half_circle 
+{
+    width: 400px;
+    height: 200px;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    border: 5px solid green;
+    border-bottom: 0px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
